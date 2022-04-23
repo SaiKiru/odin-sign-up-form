@@ -1,13 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Satisfy&family=Lora&display=swap');
 
 :root {
+    font-size: 1.1rem;
+
     --sidebar-width: 480px;
 }
 
 * {
     box-sizing: border-box;
     font-family: 'Lora', sans-serif;
-    font-size: 1.05rem;
 }
 
 html {
