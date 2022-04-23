@@ -9,7 +9,50 @@
 </head>
 
 <body>
+  <form action="#" method="post">
+    <div id="form-header">
+      <h1>Día de los Muertos</h1>
+      <p>
+        Join us on our next celebration of Día de los Muertos! It's a once in a year celebration where you could get
+        the chance to visit the Land of the Dead. Whether you want to visit your loved ones, meet new friends, or just
+        take a tour, you're welcome to take a visit!
+      </p>
+    </div>
 
+    <div id="form-body">
+      <div>
+        <label for="form-first-name">First Name</label>
+        <input type="text" id="form-first-name" name="firstName">
+      </div>
+      <div>
+        <label for="form-last-name">Last Name</label>
+        <input type="text" id="form-last-name" name="lastName">
+      </div>
+      <div>
+        <label for="form-email">Email</label>
+        <input type="email" id="form-email" name="email">
+      </div>
+      <fieldset>
+        <legend>On which dates would you like to visit?</legend>
+        <div>
+          <input type="checkbox" id="form-date-nov1" name="date" value="November-1">
+          <label for="form-date-nov1">November 1</label>
+        </div>
+        <div>
+          <input type="checkbox" id="form-date-nov2" name="date" value="November-2">
+          <label for="form-date-nov2">November 2</label>
+        </div>
+      </fieldset>
+
+      <button type="submit" id="form-submit-button">Sign Me Up</button>
+    </div>
+
+    <div id="form-footer">
+      <div>
+        Already have a ticket? <a href="#">Check your ticket details</a>
+      </div>
+    </div>
+  </form>
 </body>
 
 </html>

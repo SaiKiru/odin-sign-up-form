@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&family=Noto+Serif&display=swap');
+
+* {
+    font-family: 'Noto Serif', sans-serif;
+    font-size: 1.05rem;
+}
+
+#form-header h1 {
+    margin-bottom: 1rem;
+    font-family: Satisfy;
+    font-size: 5rem;
+}
+
+#form-body>div,
+#form-body>fieldset {
+    margin-bottom: 24px;
+}
+
+#form-body>div label {
+    display: block;
+    margin-bottom: 0.4rem;
+}
+
+#form-body>fieldset {
+    padding: 0px;
+    border: none;
+}
+
+#form-body>fieldset legend {
+    margin-bottom: 0.4rem;
+}
+
+#form-body>fieldset>div {
+    margin-bottom: 0.2rem;
+}
