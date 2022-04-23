@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Satisfy&family=Lora&display=swap');
 
+:root {
+    --sidebar-width: 480px;
+}
+
 * {
     box-sizing: border-box;
     font-family: 'Lora', sans-serif;
@@ -19,7 +23,7 @@ body {
 #main-container {
     height: 100%;
     display: grid;
-    grid-template-columns: 480px 1fr;
+    grid-template-columns: var(--sidebar-width) 1fr;
 }
 
 #sidebar {
@@ -28,8 +32,9 @@ body {
 }
 
 #sidebar img {
+    position: fixed;
     display: block;
-    width: 100%;
+    width: var(--sidebar-width);
     height: 100%;
     object-fit: cover;
     filter: brightness(0.6) contrast(0.9);
@@ -37,9 +42,9 @@ body {
 }
 
 #sidebar-img-attribution {
-    position: absolute;
+    position: fixed;
     bottom: 16px;
-    width: 100%;
+    width: var(--sidebar-width);
     text-align: center;
     color: rgb(167, 167, 167);
     font-size: 0.8rem;
