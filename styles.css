@@ -37,16 +37,18 @@ body {
     width: var(--sidebar-width);
     height: 100%;
     object-fit: cover;
-    filter: brightness(0.6) contrast(0.9);
+    filter: brightness(1.8) contrast(0.7);
     opacity: 90%;
 }
 
 #sidebar-img-attribution {
     position: fixed;
-    bottom: 16px;
+    bottom: 0px;
+    padding-block: 16px;
     width: var(--sidebar-width);
     text-align: center;
-    color: rgb(167, 167, 167);
+    background-color: rgba(0, 0, 0, 0.4);
+    color: #ffffff;
     font-size: 0.8rem;
     font-family: sans-serif;
 }
