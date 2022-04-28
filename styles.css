@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Satisfy&family=Lora&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&family=Bitter&family=Montserrat&display=swap');
 
 :root {
     font-size: 1.1rem;
@@ -8,7 +8,7 @@
 
 * {
     box-sizing: border-box;
-    font-family: 'Lora', sans-serif;
+    font-family: 'Bitter', sans-serif;
 }
 
 html {
@@ -88,25 +88,68 @@ form {
     line-height: 1.8rem;
 }
 
-#form-body>div,
-#form-body>fieldset {
+#form-body {
+    display: flex;
+    gap: 32px;
+}
+
+#form-body>div:nth-child(1) {
+    flex: 2;
+}
+
+#form-body>div:nth-child(2) {
+    flex: 3;
+}
+
+#form-body>div>div,
+#form-body>div>fieldset {
     margin-bottom: 24px;
 }
 
-#form-body>div label {
+#form-body>div>div>label {
     display: block;
-    margin-bottom: 0.4rem;
+    margin-bottom: 0.3rem;
+    color: #444444;
+    font-family: Montserrat;
 }
 
-#form-body>fieldset {
+#form-body fieldset {
     padding: 0px;
     border: none;
 }
 
-#form-body>fieldset legend {
-    margin-bottom: 0.4rem;
+#form-body fieldset legend {
+    font-size: 1.2rem;
+    font-family: Montserrat;
+    margin-bottom: 1.5rem;
 }
 
-#form-body>fieldset>div {
+#form-body fieldset div {
     margin-bottom: 0.2rem;
+}
+
+#form-body input[type="text"],
+#form-body input[type="email"] {
+    width: 100%;
+    padding: 8px 4px;
+    border: 1px solid #aaaaaa;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+#form-body input[type="text"]:focus,
+#form-body input[type="email"]:focus {
+    outline: none;
+    border-color: #444444;
+}
+
+#form-body input[type="checkbox"] {
+    width: 1.2rem;
+    margin-right: 0.8rem;
+    aspect-ratio: 1 / 1;
+    margin-bottom: 1.2rem;
+}
+
+#form-body input[type="checkbox"]+label {
+    font-size: 1.4rem;
 }
