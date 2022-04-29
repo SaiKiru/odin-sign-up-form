@@ -11,6 +11,11 @@
     font-family: 'Bitter', sans-serif;
 }
 
+::selection {
+    color: white;
+    background-color: #474343;
+}
+
 html {
     height: 100%;
 }
