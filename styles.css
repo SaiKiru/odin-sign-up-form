@@ -153,3 +153,35 @@ form {
 #form-body input[type="checkbox"]+label {
     font-size: 1.4rem;
 }
+
+#form-submit-button {
+    display: block;
+    width: max(360px, 50%);
+    padding: 16px;
+    margin-inline: auto;
+    margin-block: 16px;
+    border: none;
+    border-radius: 8px;
+    background-color: #856553;
+
+    color: white;
+    font-size: 1.1rem;
+    font-family: Montserrat;
+
+    cursor: pointer;
+}
+
+#form-footer>div {
+    margin-block: 1.4rem;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 0.8rem;
+    color: #444444
+}
+
+#form-footer>div a {
+    color: inherit;
+    font-family: inherit;
+    text-decoration-color: #856553;
+    text-decoration-thickness: 2px;
+}
